@@ -110,3 +110,31 @@ BOARD_USES_METADATA_PARTITION := true
 
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
+# SHRP Configurations
+SHRP_DEVICE_CODE := sweet
+SHRP_PATH := device/xiaomi/sweet
+SHRP_MAINTAINER := s0umyaZ56
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EDL_MODE := 1
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 0
+SHRP_NOTCH := true
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_2 := true
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+SHRP_EXCLUDE_MAGISK_FLASH := true
+
+# Custom Addons
+SHRP_EXTERNAL_ADDON_PATH := $(SHRP_PATH)/Addons
+SHRP_EXTERNAL_ADDON_1_NAME := "Magisk Latest"
+SHRP_EXTERNAL_ADDON_1_INFO := "This file installs the latest Official Magisk in the device"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "Magisk-v25.2.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Flashed successfully !"
